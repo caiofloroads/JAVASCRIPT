@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>MULTIPLICACAO</title>
+    </head>
+    <script>
+        function multiplicar() {
+            //PRIMEIRO NUMERO usaremos o DOM - Document Object Model
+            var numero1 = document.getElementById("numero1").value;
+            //SEGUNDO NUMERO
+            var numero2 = document.getElementById("numero2").value;
+            //TERCEIRO NUMERO
+            var numero3 = document.getElementById("numero3").value;
+            //MULTIPLICACAO
+            var multiplicacao = numero1*numero2*numero3
+            alert("A MULTIPLICACAO DOS TRES NUMEROS É : " + multiplicacao.toFixed())
+        }
+    </script>
+
+    <body>
+        <div>
+            <p>
+                NUMERO 1 <input id="numero1">
+            </p>
+
+            <p>
+                NUMERO 2 <input id = "numero2">
+            </p>
+
+            <p>
+                NUMERO 3 <input id = "numero3">
+            </p>
+
+            <p>
+                <button onclick="multiplicar()"> Calcular </button>
+            </p>
+        </div>
+    </body>
+
+
+</html>

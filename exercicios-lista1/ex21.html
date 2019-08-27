@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>SALARIO A RECEBER</title>>
+    </head>
+
+    <script>
+        function calcular(){
+            // salario
+            var salario = document.getElementById("salario").value;
+            // horas
+            var horas = document.getElementById("horas").value;
+            // horas extras
+            var horasextras = document.getElementById("horasextras").value
+            // valor hora extra
+            var valorhoraextra = salario/4
+            // valor hora
+            var valorhora = salario/8
+            // valor salario bruto
+            var salariobruto = horas*valorhora
+            alert("Seu salario bruto é: " + salariobruto.toFixed(2))
+            // valor total horas extras
+            var totalhoraextra = valorhoraextra*horasextras
+            alert("O total a receber de horas extras é: " + totalhoraextra.toFixed(2))
+            // salariototal
+            var salariototal = salariobruto+totalhoraextra
+            alert("Seu salario total é de: " + salariototal.toFixed(2))
+        }
+    </script>
+
+    <body>
+        <div>
+            <p>
+                Horas Trabalhadas <input id = "horas">
+            </p>
+
+            <p>
+                Horas Extras Trabalhadas <input id = "horasextras">
+            </p>
+
+            <p>
+                Salario Minimo <input id = "salario">
+            </p>
+
+            <p>
+                <button onclick="calcular()"> Calcular Salario Total</button>
+            </p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>1O% DE DESCONTO</title>
+    </head>
+
+    <script>
+        function calcular(){
+            //preco
+            var preco = document.getElementById("preco").value;
+            //10porcento
+            var porcento = preco*0.90
+            alert("O PRECO COM 10% DE DESCONTO É: " + porcento.toFixed())
+        }
+    </script>
+
+    <body>
+        <DIV>
+            <p>
+                Preco <input id="preco">
+            </p>
+
+            <p>
+                <button onclick="calcular()"> Calcular</button>
+            </p>
+        </DIV>
+    </body>
+
+</html>

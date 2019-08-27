@@ -1,0 +1,36 @@
+<html>
+
+    <head>
+        <title> Cálculo do IMC </title>
+    </head>
+
+    <script>
+        function calcular(){
+            //recupera peso
+            var peso = document.getElementById("peso").value;
+            //recupera altura
+            var altura = document.getElementById("altura").value;
+            //calcula IMC
+            var imc = peso/(altura^2)
+            alert("Seu IMC é " + imc.toFixed(2))
+        }
+    
+    </script>
+
+    <body>
+        <div>
+            <p>
+                Peso <input id="peso">
+            </p>
+
+            <p>
+                Altura <input id="altura">
+            </p>
+
+            <p>
+                <button onclick="calcular()"> Calcular </button>
+            </p>                    
+        </div>
+    </body>
+
+</html>
